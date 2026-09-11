@@ -101,6 +101,8 @@ export const FootballPitch: React.FC<PitchProps> = ({
   const nodeColor = isEmerald ? 'fill-emerald-500 stroke-emerald-300' : 'fill-cyan-500 stroke-cyan-300';
   const glowFilter = isEmerald ? 'rgba(16, 185, 129, 0.4)' : 'rgba(6, 182, 212, 0.4)';
 
+  const patternId = `pitchGrass-${isHome ? 'home' : 'away'}-${color}`;
+
   return (
     <div className="relative w-full max-w-[380px] mx-auto rounded-2xl overflow-hidden glass-panel p-3 border border-white/10 shadow-2xl">
       {/* Header Overlay */}
@@ -122,14 +124,14 @@ export const FootballPitch: React.FC<PitchProps> = ({
         className="w-full h-auto rounded-xl bg-gradient-to-b from-[#0e2a1b] via-[#091b12] to-[#0a1f14] shadow-inner select-none"
       >
         <defs>
-          <pattern id="pitchGrass" width="400" height="70" patternUnits="userSpaceOnUse">
+          <pattern id={patternId} width="400" height="70" patternUnits="userSpaceOnUse">
             <rect width="400" height="35" fill="#0d2618" opacity="0.4" />
             <rect y="35" width="400" height="35" fill="#081d12" opacity="0.4" />
           </pattern>
         </defs>
 
         {/* Grass Texture */}
-        <rect width="400" height="560" fill="url(#pitchGrass)" />
+        <rect width="400" height="560" fill={`url(#${patternId})`} />
 
         {/* Pitch Boundary Lines */}
         <rect x="20" y="20" width="360" height="520" fill="none" stroke="#22c55e" strokeWidth="2" strokeOpacity="0.5" rx="4" />

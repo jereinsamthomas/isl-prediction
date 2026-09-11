@@ -60,7 +60,7 @@ export const PredictionCard: React.FC<PredictionCardProps> = ({ prediction }) =>
           <span className="text-xs font-semibold uppercase text-emerald-400 tracking-wider">Home Team</span>
           <h3 className="text-xl sm:text-2xl font-black text-white mt-1">{home_team}</h3>
           <span className="text-xs text-slate-400 mt-2 font-mono">
-            {prematch_summary.home_formation} • Form: {prematch_summary.home_recent_form_pts} pts
+            {prematch_summary?.home_formation || '4-3-3'} • Form: {prematch_summary?.home_recent_form_pts ?? '-'} pts
           </span>
         </div>
 
@@ -84,7 +84,7 @@ export const PredictionCard: React.FC<PredictionCardProps> = ({ prediction }) =>
           <span className="text-xs font-semibold uppercase text-cyan-400 tracking-wider">Away Team</span>
           <h3 className="text-xl sm:text-2xl font-black text-white mt-1">{away_team}</h3>
           <span className="text-xs text-slate-400 mt-2 font-mono">
-            {prematch_summary.away_formation} • Form: {prematch_summary.away_recent_form_pts} pts
+            {prematch_summary?.away_formation || '4-2-3-1'} • Form: {prematch_summary?.away_recent_form_pts ?? '-'} pts
           </span>
         </div>
       </div>

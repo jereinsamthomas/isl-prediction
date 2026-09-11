@@ -9,7 +9,7 @@ import {
 } from '../types';
 import { FALLBACK_DATA } from '../data/fallbackData';
 
-const API_BASE = (import.meta as any).env?.VITE_API_BASE_URL || '/api';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
 
 function computeFallbackPrediction(payload: any): PredictionResult {
   const homeTeam = payload.home_team || 'Mumbai City FC';
