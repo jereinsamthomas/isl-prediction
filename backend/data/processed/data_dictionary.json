@@ -1,0 +1,632 @@
+[
+  {
+    "column": "Match_ID",
+    "description": "Unique match identifier",
+    "source_module": "Identifier",
+    "data_type": "object",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "ISL00001"
+  },
+  {
+    "column": "Season",
+    "description": "ISL season (e.g. 2015-16)",
+    "source_module": "Identifier",
+    "data_type": "object",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "2015-16"
+  },
+  {
+    "column": "Match_Date",
+    "description": "Match date (YYYY-MM-DD)",
+    "source_module": "Identifier",
+    "data_type": "object",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "2015-10-02"
+  },
+  {
+    "column": "Home_Team",
+    "description": "Home team name",
+    "source_module": "Identifier",
+    "data_type": "object",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "ATK Mohun Bagan"
+  },
+  {
+    "column": "Away_Team",
+    "description": "Away team name",
+    "source_module": "Identifier",
+    "data_type": "object",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "Kerala Blasters"
+  },
+  {
+    "column": "Venue_City",
+    "description": "Host city of home team",
+    "source_module": "Identifier",
+    "data_type": "object",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "Kolkata"
+  },
+  {
+    "column": "Home_Formation",
+    "description": "Home team starting formation",
+    "source_module": "3. Tactical Pattern Analysis",
+    "data_type": "object",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "4-4-2"
+  },
+  {
+    "column": "Away_Formation",
+    "description": "Away team starting formation",
+    "source_module": "3. Tactical Pattern Analysis",
+    "data_type": "object",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "3-5-2"
+  },
+  {
+    "column": "Home_Possession_Pct",
+    "description": "Home team possession %",
+    "source_module": "5. Team Performance Metrics",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "54.0"
+  },
+  {
+    "column": "Away_Possession_Pct",
+    "description": "Away team possession %",
+    "source_module": "5. Team Performance Metrics",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "46.0"
+  },
+  {
+    "column": "Home_Shots_On_Target",
+    "description": "Home shots on target",
+    "source_module": "5. Team Performance Metrics",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "4"
+  },
+  {
+    "column": "Away_Shots_On_Target",
+    "description": "Away shots on target",
+    "source_module": "5. Team Performance Metrics",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "5"
+  },
+  {
+    "column": "Home_Goals",
+    "description": "Home goals scored (total)",
+    "source_module": "5. Team Performance Metrics",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "1"
+  },
+  {
+    "column": "Away_Goals",
+    "description": "Away goals scored (total)",
+    "source_module": "5. Team Performance Metrics",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "1"
+  },
+  {
+    "column": "Home_Foreign_Goal_Contribution",
+    "description": "Goals scored by home team's foreign players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "0"
+  },
+  {
+    "column": "Home_Indian_Goal_Contribution",
+    "description": "Goals scored by home team's Indian players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "1"
+  },
+  {
+    "column": "Away_Foreign_Goal_Contribution",
+    "description": "Goals scored by away team's foreign players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "0"
+  },
+  {
+    "column": "Away_Indian_Goal_Contribution",
+    "description": "Goals scored by away team's Indian players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "1"
+  },
+  {
+    "column": "Home_Corners",
+    "description": "Home corner kicks won",
+    "source_module": "5. Team Performance Metrics",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "4"
+  },
+  {
+    "column": "Away_Corners",
+    "description": "Away corner kicks won",
+    "source_module": "5. Team Performance Metrics",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "6"
+  },
+  {
+    "column": "Home_Yellow_Cards",
+    "description": "Home yellow cards",
+    "source_module": "12. Referee Influence",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "6"
+  },
+  {
+    "column": "Away_Yellow_Cards",
+    "description": "Away yellow cards",
+    "source_module": "12. Referee Influence",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "1"
+  },
+  {
+    "column": "Home_Red_Cards",
+    "description": "Home red cards",
+    "source_module": "12. Referee Influence",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "0"
+  },
+  {
+    "column": "Away_Red_Cards",
+    "description": "Away red cards",
+    "source_module": "12. Referee Influence",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "0"
+  },
+  {
+    "column": "Home_Indian_Player_Rating_Avg",
+    "description": "Avg match rating of home Indian players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "6.72"
+  },
+  {
+    "column": "Home_Foreign_Player_Rating_Avg",
+    "description": "Avg match rating of home foreign players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "7.49"
+  },
+  {
+    "column": "Away_Indian_Player_Rating_Avg",
+    "description": "Avg match rating of away Indian players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "7.71"
+  },
+  {
+    "column": "Away_Foreign_Player_Rating_Avg",
+    "description": "Avg match rating of away foreign players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "6.96"
+  },
+  {
+    "column": "Home_Squad_Market_Value_Cr",
+    "description": "Home squad total market value (INR Crore)",
+    "source_module": "4. Player Market Value",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "42.2"
+  },
+  {
+    "column": "Home_Foreign_Player_Market_Value_Cr",
+    "description": "Market value of home team's foreign players (INR Crore)",
+    "source_module": "4. Player Market Value",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "19.8"
+  },
+  {
+    "column": "Away_Squad_Market_Value_Cr",
+    "description": "Away squad total market value (INR Crore)",
+    "source_module": "4. Player Market Value",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "64.0"
+  },
+  {
+    "column": "Away_Foreign_Player_Market_Value_Cr",
+    "description": "Market value of away team's foreign players (INR Crore)",
+    "source_module": "4. Player Market Value",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "44.4"
+  },
+  {
+    "column": "Home_Foreign_Clearances_Tackles",
+    "description": "Clearances + tackles by home foreign players",
+    "source_module": "1. Opponent Analysis / 5. Team Performance",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "8"
+  },
+  {
+    "column": "Home_Indian_Clearances_Tackles",
+    "description": "Clearances + tackles by home Indian players",
+    "source_module": "1. Opponent Analysis / 5. Team Performance",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "11"
+  },
+  {
+    "column": "Away_Foreign_Clearances_Tackles",
+    "description": "Clearances + tackles by away foreign players",
+    "source_module": "1. Opponent Analysis / 5. Team Performance",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "9"
+  },
+  {
+    "column": "Away_Indian_Clearances_Tackles",
+    "description": "Clearances + tackles by away Indian players",
+    "source_module": "1. Opponent Analysis / 5. Team Performance",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "11"
+  },
+  {
+    "column": "Home_Foreign_Big_Chances_Created",
+    "description": "Big chances created by home foreign players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "5"
+  },
+  {
+    "column": "Home_Indian_Big_Chances_Created",
+    "description": "Big chances created by home Indian players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "2"
+  },
+  {
+    "column": "Away_Foreign_Big_Chances_Created",
+    "description": "Big chances created by away foreign players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "3"
+  },
+  {
+    "column": "Away_Indian_Big_Chances_Created",
+    "description": "Big chances created by away Indian players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "1"
+  },
+  {
+    "column": "Home_Foreign_Big_Chances_Missed",
+    "description": "Big chances missed by home foreign players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "5"
+  },
+  {
+    "column": "Home_Indian_Big_Chances_Missed",
+    "description": "Big chances missed by home Indian players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "2"
+  },
+  {
+    "column": "Away_Foreign_Big_Chances_Missed",
+    "description": "Big chances missed by away foreign players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "4"
+  },
+  {
+    "column": "Away_Indian_Big_Chances_Missed",
+    "description": "Big chances missed by away Indian players",
+    "source_module": "2. Player Performance Analysis",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "2"
+  },
+  {
+    "column": "Home_Foreign_Interception_Rate",
+    "description": "Interception success rate % of home foreign players",
+    "source_module": "1. Opponent Analysis",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "36.9"
+  },
+  {
+    "column": "Home_Indian_Interception_Rate",
+    "description": "Interception success rate % of home Indian players",
+    "source_module": "1. Opponent Analysis",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "43.7"
+  },
+  {
+    "column": "Away_Foreign_Interception_Rate",
+    "description": "Interception success rate % of away foreign players",
+    "source_module": "1. Opponent Analysis",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "34.5"
+  },
+  {
+    "column": "Away_Indian_Interception_Rate",
+    "description": "Interception success rate % of away Indian players",
+    "source_module": "1. Opponent Analysis",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "35.6"
+  },
+  {
+    "column": "Home_Injury_Count",
+    "description": "Number of home players injured/at risk",
+    "source_module": "6. Injury Risk Analysis",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "0"
+  },
+  {
+    "column": "Away_Injury_Count",
+    "description": "Number of away players injured/at risk",
+    "source_module": "6. Injury Risk Analysis",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "2"
+  },
+  {
+    "column": "Weather_Condition",
+    "description": "Match-day weather: Clear/Humid/Rainy/Overcast",
+    "source_module": "8. Weather Condition",
+    "data_type": "object",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "Overcast"
+  },
+  {
+    "column": "Pitch_Condition",
+    "description": "Pitch quality: Good/Average/Poor",
+    "source_module": "8. Weather Condition (ground factors)",
+    "data_type": "object",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "Good"
+  },
+  {
+    "column": "Match_Condition",
+    "description": "Match kickoff condition: Day / Night",
+    "source_module": "8. Weather Condition (ground factors)",
+    "data_type": "object",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "Night"
+  },
+  {
+    "column": "Home_Fatigue_Index",
+    "description": "Home team cumulative fatigue index 0-10",
+    "source_module": "9. Player Fatigue",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "1.8"
+  },
+  {
+    "column": "Away_Fatigue_Index",
+    "description": "Away team cumulative fatigue index 0-10",
+    "source_module": "9. Player Fatigue",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "1.8"
+  },
+  {
+    "column": "Home_Team_Chemistry_Score",
+    "description": "Home squad cohesion score 0-10",
+    "source_module": "10. Team Chemistry",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "7.92"
+  },
+  {
+    "column": "Away_Team_Chemistry_Score",
+    "description": "Away squad cohesion score 0-10",
+    "source_module": "10. Team Chemistry",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "7.29"
+  },
+  {
+    "column": "H2H_Home_Wins_Last5",
+    "description": "Home team wins in last 5 head-to-head meetings",
+    "source_module": "11. Head-to-Head History",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "0"
+  },
+  {
+    "column": "H2H_Away_Wins_Last5",
+    "description": "Away team wins in last 5 head-to-head meetings",
+    "source_module": "11. Head-to-Head History",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "0"
+  },
+  {
+    "column": "Referee_Strictness_Index",
+    "description": "Referee strictness index 0-10",
+    "source_module": "12. Referee Influence",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "4.9"
+  },
+  {
+    "column": "Home_Recent_Form_Pts",
+    "description": "Home team points from last 5 matches, max 15",
+    "source_module": "13. Player Recent Form",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "0"
+  },
+  {
+    "column": "Away_Recent_Form_Pts",
+    "description": "Away team points from last 5 matches, max 15",
+    "source_module": "13. Player Recent Form",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "0"
+  },
+  {
+    "column": "Home_Set_Piece_Conversion_Pct",
+    "description": "Home set-piece conversion %",
+    "source_module": "14. Set Piece Effectiveness",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "12.3"
+  },
+  {
+    "column": "Away_Set_Piece_Conversion_Pct",
+    "description": "Away set-piece conversion %",
+    "source_module": "14. Set Piece Effectiveness",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "20.3"
+  },
+  {
+    "column": "Key_Player_Missing_Side",
+    "description": "Which side (if any) is missing its key player",
+    "source_module": "15. Key Player",
+    "data_type": "object",
+    "missing_pct": 69.91,
+    "used_for_prematch_ml": "YES",
+    "example_value": "Away"
+  },
+  {
+    "column": "Home_Foreign_Player_Ratio",
+    "description": "Fraction of home starting XI that are foreign players",
+    "source_module": "10. Team Chemistry (composition)",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "0.33"
+  },
+  {
+    "column": "Away_Foreign_Player_Ratio",
+    "description": "Fraction of away starting XI that are foreign players",
+    "source_module": "10. Team Chemistry (composition)",
+    "data_type": "float64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "YES",
+    "example_value": "0.36"
+  },
+  {
+    "column": "Match_Result",
+    "description": "Match outcome from home perspective: Home_Win / Draw / Away_Win",
+    "source_module": "Target label",
+    "data_type": "object",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "Draw"
+  },
+  {
+    "column": "Home_Points",
+    "description": "League points earned by home team",
+    "source_module": "Target label",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "1"
+  },
+  {
+    "column": "Away_Points",
+    "description": "League points earned by away team",
+    "source_module": "Target label",
+    "data_type": "int64",
+    "missing_pct": 0.0,
+    "used_for_prematch_ml": "NO",
+    "example_value": "1"
+  }
+]

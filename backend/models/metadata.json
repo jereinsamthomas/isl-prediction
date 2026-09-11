@@ -1,0 +1,509 @@
+{
+  "random_split": {
+    "Logistic Regression": {
+      "accuracy": 43.18,
+      "precision": 39.1,
+      "recall": 38.25,
+      "f1_score": 36.63,
+      "confusion_matrix": [
+        [
+          19,
+          9,
+          40
+        ],
+        [
+          21,
+          9,
+          28
+        ],
+        [
+          20,
+          7,
+          67
+        ]
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 40.91,
+      "precision": 36.87,
+      "recall": 33.44,
+      "f1_score": 26.66,
+      "confusion_matrix": [
+        [
+          8,
+          1,
+          59
+        ],
+        [
+          9,
+          2,
+          47
+        ],
+        [
+          12,
+          2,
+          80
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "accuracy": 36.82,
+      "precision": 33.65,
+      "recall": 34.57,
+      "f1_score": 32.26,
+      "confusion_matrix": [
+        [
+          35,
+          2,
+          31
+        ],
+        [
+          24,
+          5,
+          29
+        ],
+        [
+          40,
+          13,
+          41
+        ]
+      ]
+    },
+    "K-Nearest Neighbors": {
+      "accuracy": 43.64,
+      "precision": 44.16,
+      "recall": 41.55,
+      "f1_score": 41.56,
+      "confusion_matrix": [
+        [
+          31,
+          9,
+          28
+        ],
+        [
+          24,
+          15,
+          19
+        ],
+        [
+          36,
+          8,
+          50
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": 38.64,
+      "precision": 34.93,
+      "recall": 34.77,
+      "f1_score": 33.73,
+      "confusion_matrix": [
+        [
+          13,
+          14,
+          41
+        ],
+        [
+          12,
+          13,
+          33
+        ],
+        [
+          23,
+          12,
+          59
+        ]
+      ]
+    },
+    "XGBoost": {
+      "accuracy": 36.82,
+      "precision": 32.63,
+      "recall": 32.82,
+      "f1_score": 31.67,
+      "confusion_matrix": [
+        [
+          14,
+          13,
+          41
+        ],
+        [
+          13,
+          10,
+          35
+        ],
+        [
+          23,
+          14,
+          57
+        ]
+      ]
+    }
+  },
+  "temporal_split": {
+    "Logistic Regression": {
+      "accuracy": 43.18,
+      "precision": 36.56,
+      "recall": 36.74,
+      "f1_score": 35.77,
+      "confusion_matrix": [
+        [
+          20,
+          16,
+          39
+        ],
+        [
+          11,
+          7,
+          27
+        ],
+        [
+          22,
+          10,
+          68
+        ]
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 43.18,
+      "precision": 32.35,
+      "recall": 33.37,
+      "f1_score": 27.76,
+      "confusion_matrix": [
+        [
+          8,
+          9,
+          58
+        ],
+        [
+          3,
+          2,
+          40
+        ],
+        [
+          10,
+          5,
+          85
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "accuracy": 38.64,
+      "precision": 35.51,
+      "recall": 35.04,
+      "f1_score": 34.79,
+      "confusion_matrix": [
+        [
+          20,
+          24,
+          31
+        ],
+        [
+          12,
+          11,
+          22
+        ],
+        [
+          21,
+          25,
+          54
+        ]
+      ]
+    },
+    "K-Nearest Neighbors": {
+      "accuracy": 39.55,
+      "precision": 34.5,
+      "recall": 34.44,
+      "f1_score": 34.1,
+      "confusion_matrix": [
+        [
+          27,
+          12,
+          36
+        ],
+        [
+          20,
+          6,
+          19
+        ],
+        [
+          36,
+          10,
+          54
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": 34.09,
+      "precision": 29.9,
+      "recall": 30.22,
+      "f1_score": 29.63,
+      "confusion_matrix": [
+        [
+          14,
+          17,
+          44
+        ],
+        [
+          6,
+          9,
+          30
+        ],
+        [
+          34,
+          14,
+          52
+        ]
+      ]
+    },
+    "XGBoost": {
+      "accuracy": 40.0,
+      "precision": 35.86,
+      "recall": 35.89,
+      "f1_score": 34.92,
+      "confusion_matrix": [
+        [
+          15,
+          18,
+          42
+        ],
+        [
+          4,
+          12,
+          29
+        ],
+        [
+          25,
+          14,
+          61
+        ]
+      ]
+    }
+  },
+  "target_classes": [
+    "Away_Win",
+    "Draw",
+    "Home_Win"
+  ],
+  "feature_columns": [
+    "Home_Formation",
+    "Away_Formation",
+    "Weather_Condition",
+    "Pitch_Condition",
+    "Match_Condition",
+    "Key_Player_Missing_Side",
+    "Home_Indian_Player_Rating_Avg",
+    "Home_Foreign_Player_Rating_Avg",
+    "Away_Indian_Player_Rating_Avg",
+    "Away_Foreign_Player_Rating_Avg",
+    "Home_Squad_Market_Value_Cr",
+    "Home_Foreign_Player_Market_Value_Cr",
+    "Away_Squad_Market_Value_Cr",
+    "Away_Foreign_Player_Market_Value_Cr",
+    "Home_Foreign_Clearances_Tackles",
+    "Home_Indian_Clearances_Tackles",
+    "Away_Foreign_Clearances_Tackles",
+    "Away_Indian_Clearances_Tackles",
+    "Home_Foreign_Big_Chances_Created",
+    "Home_Indian_Big_Chances_Created",
+    "Away_Foreign_Big_Chances_Created",
+    "Away_Indian_Big_Chances_Created",
+    "Home_Foreign_Big_Chances_Missed",
+    "Home_Indian_Big_Chances_Missed",
+    "Away_Foreign_Big_Chances_Missed",
+    "Away_Indian_Big_Chances_Missed",
+    "Home_Foreign_Interception_Rate",
+    "Home_Indian_Interception_Rate",
+    "Away_Foreign_Interception_Rate",
+    "Away_Indian_Interception_Rate",
+    "Home_Injury_Count",
+    "Away_Injury_Count",
+    "Home_Fatigue_Index",
+    "Away_Fatigue_Index",
+    "Home_Team_Chemistry_Score",
+    "Away_Team_Chemistry_Score",
+    "H2H_Home_Wins_Last5",
+    "H2H_Away_Wins_Last5",
+    "Referee_Strictness_Index",
+    "Home_Recent_Form_Pts",
+    "Away_Recent_Form_Pts",
+    "Home_Set_Piece_Conversion_Pct",
+    "Away_Set_Piece_Conversion_Pct",
+    "Home_Foreign_Player_Ratio",
+    "Away_Foreign_Player_Ratio",
+    "Market_Value_Difference",
+    "Market_Value_Ratio",
+    "Foreign_Market_Value_Difference",
+    "Indian_Market_Value_Difference",
+    "Indian_Rating_Difference",
+    "Foreign_Rating_Difference",
+    "Overall_Rating_Difference",
+    "Fatigue_Difference",
+    "Chemistry_Difference",
+    "Form_Difference",
+    "H2H_Wins_Difference",
+    "Set_Piece_Conversion_Diff",
+    "Foreign_Player_Ratio_Diff",
+    "Injury_Count_Diff",
+    "Clearance_Tackle_Foreign_Diff",
+    "Clearance_Tackle_Indian_Diff",
+    "Big_Chance_Created_Foreign_Diff",
+    "Big_Chance_Created_Indian_Diff",
+    "Big_Chance_Missed_Foreign_Diff",
+    "Big_Chance_Missed_Indian_Diff",
+    "Interception_Rate_Foreign_Diff",
+    "Interception_Rate_Indian_Diff",
+    "Home_Historical_Win_Rate",
+    "Away_Historical_Win_Rate",
+    "Historical_Win_Rate_Diff",
+    "Home_Venue_Win_Rate",
+    "Away_Venue_Win_Rate",
+    "Home_Rolling_Goal_Diff",
+    "Away_Rolling_Goal_Diff",
+    "Rolling_Goal_Diff_Differential",
+    "H2H_Prior_Home_Win_Rate",
+    "H2H_Prior_Draw_Rate",
+    "H2H_Prior_Away_Win_Rate",
+    "Home_Days_Rest",
+    "Away_Days_Rest",
+    "Days_Rest_Diff"
+  ],
+  "feature_importance_rf": [
+    {
+      "feature": "Overall_Rating_Difference",
+      "importance": 0.0251,
+      "percentage": 2.51
+    },
+    {
+      "feature": "Fatigue_Difference",
+      "importance": 0.0227,
+      "percentage": 2.27
+    },
+    {
+      "feature": "Indian_Rating_Difference",
+      "importance": 0.022,
+      "percentage": 2.2
+    },
+    {
+      "feature": "Home_Indian_Player_Rating_Avg",
+      "importance": 0.0215,
+      "percentage": 2.15
+    },
+    {
+      "feature": "Home_Historical_Win_Rate",
+      "importance": 0.0192,
+      "percentage": 1.92
+    },
+    {
+      "feature": "Away_Foreign_Player_Rating_Avg",
+      "importance": 0.0192,
+      "percentage": 1.92
+    },
+    {
+      "feature": "Away_Set_Piece_Conversion_Pct",
+      "importance": 0.0186,
+      "percentage": 1.86
+    },
+    {
+      "feature": "Away_Venue_Win_Rate",
+      "importance": 0.0183,
+      "percentage": 1.83
+    },
+    {
+      "feature": "Chemistry_Difference",
+      "importance": 0.0183,
+      "percentage": 1.83
+    },
+    {
+      "feature": "Foreign_Rating_Difference",
+      "importance": 0.018,
+      "percentage": 1.8
+    },
+    {
+      "feature": "Home_Venue_Win_Rate",
+      "importance": 0.0177,
+      "percentage": 1.77
+    },
+    {
+      "feature": "Foreign_Player_Ratio_Diff",
+      "importance": 0.0177,
+      "percentage": 1.77
+    },
+    {
+      "feature": "Days_Rest_Diff",
+      "importance": 0.0176,
+      "percentage": 1.76
+    },
+    {
+      "feature": "Away_Team_Chemistry_Score",
+      "importance": 0.0174,
+      "percentage": 1.74
+    },
+    {
+      "feature": "Historical_Win_Rate_Diff",
+      "importance": 0.0173,
+      "percentage": 1.73
+    },
+    {
+      "feature": "Away_Historical_Win_Rate",
+      "importance": 0.0172,
+      "percentage": 1.72
+    },
+    {
+      "feature": "Away_Indian_Interception_Rate",
+      "importance": 0.0172,
+      "percentage": 1.72
+    },
+    {
+      "feature": "Home_Foreign_Interception_Rate",
+      "importance": 0.0168,
+      "percentage": 1.68
+    },
+    {
+      "feature": "Away_Indian_Player_Rating_Avg",
+      "importance": 0.0168,
+      "percentage": 1.68
+    },
+    {
+      "feature": "Interception_Rate_Indian_Diff",
+      "importance": 0.0167,
+      "percentage": 1.67
+    },
+    {
+      "feature": "Home_Squad_Market_Value_Cr",
+      "importance": 0.0166,
+      "percentage": 1.66
+    },
+    {
+      "feature": "Set_Piece_Conversion_Diff",
+      "importance": 0.0163,
+      "percentage": 1.63
+    },
+    {
+      "feature": "Foreign_Market_Value_Difference",
+      "importance": 0.0159,
+      "percentage": 1.59
+    },
+    {
+      "feature": "Home_Team_Chemistry_Score",
+      "importance": 0.0158,
+      "percentage": 1.58
+    },
+    {
+      "feature": "Home_Fatigue_Index",
+      "importance": 0.0156,
+      "percentage": 1.56
+    }
+  ],
+  "paper_benchmarks": {
+    "Logistic Regression": 82.4,
+    "Random Forest": 79.8,
+    "Decision Tree": 74.3,
+    "K-Nearest Neighbors": 71.2,
+    "note": "Paper benchmarks represent retrospective in-match feature experiments. Production model uses strict zero-leakage pre-match features."
+  },
+  "best_model": {
+    "name": "K-Nearest Neighbors",
+    "accuracy": 43.64,
+    "f1_score": 41.56
+  }
+}

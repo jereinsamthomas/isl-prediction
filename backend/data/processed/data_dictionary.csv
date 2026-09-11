@@ -1,0 +1,71 @@
+column,description,source_module,data_type,missing_pct,used_for_prematch_ml,example_value
+Match_ID,Unique match identifier,Identifier,object,0.0,NO,ISL00001
+Season,ISL season (e.g. 2015-16),Identifier,object,0.0,YES,2015-16
+Match_Date,Match date (YYYY-MM-DD),Identifier,object,0.0,NO,2015-10-02
+Home_Team,Home team name,Identifier,object,0.0,YES,ATK Mohun Bagan
+Away_Team,Away team name,Identifier,object,0.0,YES,Kerala Blasters
+Venue_City,Host city of home team,Identifier,object,0.0,YES,Kolkata
+Home_Formation,Home team starting formation,3. Tactical Pattern Analysis,object,0.0,YES,4-4-2
+Away_Formation,Away team starting formation,3. Tactical Pattern Analysis,object,0.0,YES,3-5-2
+Home_Possession_Pct,Home team possession %,5. Team Performance Metrics,float64,0.0,NO,54.0
+Away_Possession_Pct,Away team possession %,5. Team Performance Metrics,float64,0.0,NO,46.0
+Home_Shots_On_Target,Home shots on target,5. Team Performance Metrics,int64,0.0,NO,4
+Away_Shots_On_Target,Away shots on target,5. Team Performance Metrics,int64,0.0,NO,5
+Home_Goals,Home goals scored (total),5. Team Performance Metrics,int64,0.0,NO,1
+Away_Goals,Away goals scored (total),5. Team Performance Metrics,int64,0.0,NO,1
+Home_Foreign_Goal_Contribution,Goals scored by home team's foreign players,2. Player Performance Analysis,int64,0.0,NO,0
+Home_Indian_Goal_Contribution,Goals scored by home team's Indian players,2. Player Performance Analysis,int64,0.0,NO,1
+Away_Foreign_Goal_Contribution,Goals scored by away team's foreign players,2. Player Performance Analysis,int64,0.0,NO,0
+Away_Indian_Goal_Contribution,Goals scored by away team's Indian players,2. Player Performance Analysis,int64,0.0,NO,1
+Home_Corners,Home corner kicks won,5. Team Performance Metrics,int64,0.0,NO,4
+Away_Corners,Away corner kicks won,5. Team Performance Metrics,int64,0.0,NO,6
+Home_Yellow_Cards,Home yellow cards,12. Referee Influence,int64,0.0,NO,6
+Away_Yellow_Cards,Away yellow cards,12. Referee Influence,int64,0.0,NO,1
+Home_Red_Cards,Home red cards,12. Referee Influence,int64,0.0,NO,0
+Away_Red_Cards,Away red cards,12. Referee Influence,int64,0.0,NO,0
+Home_Indian_Player_Rating_Avg,Avg match rating of home Indian players,2. Player Performance Analysis,float64,0.0,YES,6.72
+Home_Foreign_Player_Rating_Avg,Avg match rating of home foreign players,2. Player Performance Analysis,float64,0.0,YES,7.49
+Away_Indian_Player_Rating_Avg,Avg match rating of away Indian players,2. Player Performance Analysis,float64,0.0,YES,7.71
+Away_Foreign_Player_Rating_Avg,Avg match rating of away foreign players,2. Player Performance Analysis,float64,0.0,YES,6.96
+Home_Squad_Market_Value_Cr,Home squad total market value (INR Crore),4. Player Market Value,float64,0.0,YES,42.2
+Home_Foreign_Player_Market_Value_Cr,Market value of home team's foreign players (INR Crore),4. Player Market Value,float64,0.0,YES,19.8
+Away_Squad_Market_Value_Cr,Away squad total market value (INR Crore),4. Player Market Value,float64,0.0,YES,64.0
+Away_Foreign_Player_Market_Value_Cr,Market value of away team's foreign players (INR Crore),4. Player Market Value,float64,0.0,YES,44.4
+Home_Foreign_Clearances_Tackles,Clearances + tackles by home foreign players,1. Opponent Analysis / 5. Team Performance,int64,0.0,NO,8
+Home_Indian_Clearances_Tackles,Clearances + tackles by home Indian players,1. Opponent Analysis / 5. Team Performance,int64,0.0,NO,11
+Away_Foreign_Clearances_Tackles,Clearances + tackles by away foreign players,1. Opponent Analysis / 5. Team Performance,int64,0.0,NO,9
+Away_Indian_Clearances_Tackles,Clearances + tackles by away Indian players,1. Opponent Analysis / 5. Team Performance,int64,0.0,NO,11
+Home_Foreign_Big_Chances_Created,Big chances created by home foreign players,2. Player Performance Analysis,int64,0.0,NO,5
+Home_Indian_Big_Chances_Created,Big chances created by home Indian players,2. Player Performance Analysis,int64,0.0,NO,2
+Away_Foreign_Big_Chances_Created,Big chances created by away foreign players,2. Player Performance Analysis,int64,0.0,NO,3
+Away_Indian_Big_Chances_Created,Big chances created by away Indian players,2. Player Performance Analysis,int64,0.0,NO,1
+Home_Foreign_Big_Chances_Missed,Big chances missed by home foreign players,2. Player Performance Analysis,int64,0.0,NO,5
+Home_Indian_Big_Chances_Missed,Big chances missed by home Indian players,2. Player Performance Analysis,int64,0.0,NO,2
+Away_Foreign_Big_Chances_Missed,Big chances missed by away foreign players,2. Player Performance Analysis,int64,0.0,NO,4
+Away_Indian_Big_Chances_Missed,Big chances missed by away Indian players,2. Player Performance Analysis,int64,0.0,NO,2
+Home_Foreign_Interception_Rate,Interception success rate % of home foreign players,1. Opponent Analysis,float64,0.0,NO,36.9
+Home_Indian_Interception_Rate,Interception success rate % of home Indian players,1. Opponent Analysis,float64,0.0,NO,43.7
+Away_Foreign_Interception_Rate,Interception success rate % of away foreign players,1. Opponent Analysis,float64,0.0,NO,34.5
+Away_Indian_Interception_Rate,Interception success rate % of away Indian players,1. Opponent Analysis,float64,0.0,NO,35.6
+Home_Injury_Count,Number of home players injured/at risk,6. Injury Risk Analysis,int64,0.0,YES,0
+Away_Injury_Count,Number of away players injured/at risk,6. Injury Risk Analysis,int64,0.0,YES,2
+Weather_Condition,Match-day weather: Clear/Humid/Rainy/Overcast,8. Weather Condition,object,0.0,YES,Overcast
+Pitch_Condition,Pitch quality: Good/Average/Poor,8. Weather Condition (ground factors),object,0.0,YES,Good
+Match_Condition,Match kickoff condition: Day / Night,8. Weather Condition (ground factors),object,0.0,YES,Night
+Home_Fatigue_Index,Home team cumulative fatigue index 0-10,9. Player Fatigue,float64,0.0,YES,1.8
+Away_Fatigue_Index,Away team cumulative fatigue index 0-10,9. Player Fatigue,float64,0.0,YES,1.8
+Home_Team_Chemistry_Score,Home squad cohesion score 0-10,10. Team Chemistry,float64,0.0,YES,7.92
+Away_Team_Chemistry_Score,Away squad cohesion score 0-10,10. Team Chemistry,float64,0.0,YES,7.29
+H2H_Home_Wins_Last5,Home team wins in last 5 head-to-head meetings,11. Head-to-Head History,int64,0.0,YES,0
+H2H_Away_Wins_Last5,Away team wins in last 5 head-to-head meetings,11. Head-to-Head History,int64,0.0,YES,0
+Referee_Strictness_Index,Referee strictness index 0-10,12. Referee Influence,float64,0.0,YES,4.9
+Home_Recent_Form_Pts,"Home team points from last 5 matches, max 15",13. Player Recent Form,int64,0.0,YES,0
+Away_Recent_Form_Pts,"Away team points from last 5 matches, max 15",13. Player Recent Form,int64,0.0,YES,0
+Home_Set_Piece_Conversion_Pct,Home set-piece conversion %,14. Set Piece Effectiveness,float64,0.0,YES,12.3
+Away_Set_Piece_Conversion_Pct,Away set-piece conversion %,14. Set Piece Effectiveness,float64,0.0,YES,20.3
+Key_Player_Missing_Side,Which side (if any) is missing its key player,15. Key Player,object,69.91,YES,Away
+Home_Foreign_Player_Ratio,Fraction of home starting XI that are foreign players,10. Team Chemistry (composition),float64,0.0,YES,0.33
+Away_Foreign_Player_Ratio,Fraction of away starting XI that are foreign players,10. Team Chemistry (composition),float64,0.0,YES,0.36
+Match_Result,Match outcome from home perspective: Home_Win / Draw / Away_Win,Target label,object,0.0,NO,Draw
+Home_Points,League points earned by home team,Target label,int64,0.0,NO,1
+Away_Points,League points earned by away team,Target label,int64,0.0,NO,1

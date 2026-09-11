@@ -1,0 +1,4 @@
+Match_ID,Date,Season,Home_Team,Away_Team,Home_Team_Market_Value,Away_Team_Market_Value,Home_Foreign_Goal_Contribution,Away_Foreign_Goal_Contribution,Home_Indian_Goal_Contribution,Away_Indian_Goal_Contribution,Home_Recent_Form,Away_Recent_Form,Weather,Pitch_Condition,Referee_Strictness_Index,Home_Days_Rest,Away_Days_Rest,Result,Data_Type
+SAMPLE001,2024-01-10,2023-24,Mumbai City FC,Kerala Blasters,120.5,98.3,8,5,6,4,11,8,Clear,Good,0.42,6,5,WIN,SYNTHETIC_DEMO
+SAMPLE002,2024-01-15,2023-24,East Bengal FC,FC Goa,75.2,110.4,4,9,7,5,7,12,Rain,Wet,0.68,4,7,LOSS,SYNTHETIC_DEMO
+SAMPLE003,2024-01-20,2023-24,Bengaluru FC,Chennaiyin FC,121.1,76.5,7,6,5,5,10,10,Cloudy,Good,0.51,7,6,DRAW,SYNTHETIC_DEMO

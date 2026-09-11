@@ -1,0 +1,19 @@
+{
+  "name": "isl-football-intelligence",
+  "version": "1.0.0",
+  "description": "Indian Super League Match Prediction & Advanced Football Analytics Platform",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview"
+  },
+  "keywords": [
+    "isl",
+    "football-analytics",
+    "machine-learning",
+    "match-prediction"
+  ],
+  "author": "Jerein Sam Thomas, Gautham Ragunath, Adhith NJ (SRMIST)",
+  "license": "MIT"
+}

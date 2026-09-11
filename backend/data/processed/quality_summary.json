@@ -1,0 +1,47 @@
+{
+  "status": "VALIDATED",
+  "total_matches": 1100,
+  "total_columns": 70,
+  "seasons_count": 10,
+  "seasons": [
+    "2015-16",
+    "2016-17",
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25"
+  ],
+  "teams_count": 12,
+  "teams": [
+    "ATK Mohun Bagan",
+    "Bengaluru FC",
+    "Chennaiyin FC",
+    "East Bengal FC",
+    "FC Goa",
+    "Hyderabad FC",
+    "Jamshedpur FC",
+    "Kerala Blasters",
+    "Mumbai City FC",
+    "NorthEast United FC",
+    "Odisha FC",
+    "Punjab FC"
+  ],
+  "date_range": {
+    "min": "2015-10-02",
+    "max": "2025-04-19"
+  },
+  "missing_values": 769,
+  "missing_percentage": 0.0,
+  "duplicates": 2,
+  "result_distribution": {
+    "Home_Win": 469,
+    "Away_Win": 342,
+    "Draw": 289
+  },
+  "prematch_features_count": 33,
+  "leakage_protected": true
+}
